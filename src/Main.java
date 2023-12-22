@@ -7,7 +7,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) {
         //Creazione mappa con primo metodo di inizializzazione
-        Map<String, String> mappa = new HashMap<String, String>();
+        Map<String, String> mappa = new HashMap<>();
         mappa.put("Palermo", "PA");
         mappa.put("Torino", "TO");
         System.out.println("La prima mappa = " + mappa);
@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Secondo mappa = " + mappa2);
 
         //Creazione mappa con terzo metodo di inizializzazione
-        Map<String, String> mappa3 = new HashMap<String, String>(Map.ofEntries
+        Map<String, String> mappa3 = new HashMap<>(Map.ofEntries
                 (new AbstractMap.SimpleEntry<>("Palermo", "PA"),
                         new AbstractMap.SimpleEntry<>("Torino", "TO"))
         );
